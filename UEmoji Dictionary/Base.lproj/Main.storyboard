@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,10 +28,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UF0-dR-Hnc" secondAttribute="bottom" id="8gV-5X-IqN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UF0-dR-Hnc" secondAttribute="trailing" constant="-16" id="MOI-wH-tu7"/>
-                            <constraint firstItem="UF0-dR-Hnc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="rTW-dc-Dn6"/>
-                            <constraint firstItem="UF0-dR-Hnc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="uaD-MO-maa"/>
+                            <constraint firstAttribute="trailing" secondItem="UF0-dR-Hnc" secondAttribute="trailing" id="L1m-yw-GvM"/>
+                            <constraint firstItem="UF0-dR-Hnc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sv8-A3-Zaq"/>
+                            <constraint firstItem="UF0-dR-Hnc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d0N-Pd-oYI"/>
+                            <constraint firstItem="UF0-dR-Hnc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gsK-8K-oCS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -41,7 +40,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="58"/>
+            <point key="canvasLocation" x="-338" y="56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rrs-RK-5tp">
+            <objects>
+                <viewController id="ObI-Ea-mRZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sFI-HH-ofZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vUb-8g-ce6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqO-zQ-epm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⛪️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-Pi-NbB">
+                                <rect key="frame" x="63.5" y="60" width="248" height="272.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="228"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a chucrch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-fv-aTn">
+                                <rect key="frame" x="122.5" y="352.5" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PWw-Pi-NbB" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="1gT-SJ-5dv"/>
+                            <constraint firstItem="PWw-Pi-NbB" firstAttribute="top" secondItem="sFI-HH-ofZ" secondAttribute="bottom" constant="40" id="81A-5m-Vcm"/>
+                            <constraint firstItem="p0A-fv-aTn" firstAttribute="top" secondItem="PWw-Pi-NbB" secondAttribute="bottom" constant="20" id="UHY-NF-Kxu"/>
+                            <constraint firstItem="p0A-fv-aTn" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="q6h-uq-D2j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fe5-Sk-6kk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.79999999999995" y="56.221889055472268"/>
         </scene>
     </scenes>
 </document>
