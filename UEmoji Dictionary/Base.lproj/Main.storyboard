@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a chucrch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-fv-aTn">
-                                <rect key="frame" x="122.5" y="396.5" width="130" height="21"/>
+                                <rect key="frame" x="122.5" y="397" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,6 +78,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="definitionLabel" destination="p0A-fv-aTn" id="Xcn-cn-9At"/>
                         <outlet property="emojiLabel" destination="PWw-Pi-NbB" id="bFJ-Y2-H4q"/>
                     </connections>
                 </viewController>
