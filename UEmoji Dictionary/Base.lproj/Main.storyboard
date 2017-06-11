@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ux6-rJ-EJT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ux6-rJ-EJT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -62,8 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a chucrch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-fv-aTn">
-                                <rect key="frame" x="122.5" y="397" width="130" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-fv-aTn">
+                                <rect key="frame" x="127.5" y="397" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJv-Ss-ecc">
+                                <rect key="frame" x="124.5" y="432" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tP-bG-HSN">
+                                <rect key="frame" x="133" y="473" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,11 +85,18 @@
                         <constraints>
                             <constraint firstItem="PWw-Pi-NbB" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="1gT-SJ-5dv"/>
                             <constraint firstItem="PWw-Pi-NbB" firstAttribute="top" secondItem="sFI-HH-ofZ" secondAttribute="bottom" constant="40" id="81A-5m-Vcm"/>
+                            <constraint firstItem="7tP-bG-HSN" firstAttribute="top" secondItem="LJv-Ss-ecc" secondAttribute="bottom" constant="20" id="LRx-kg-YLH"/>
+                            <constraint firstItem="LJv-Ss-ecc" firstAttribute="top" secondItem="p0A-fv-aTn" secondAttribute="bottom" constant="14" id="TgG-KR-yQl"/>
                             <constraint firstItem="p0A-fv-aTn" firstAttribute="top" secondItem="PWw-Pi-NbB" secondAttribute="bottom" constant="20" id="UHY-NF-Kxu"/>
+                            <constraint firstItem="7tP-bG-HSN" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="VwT-ZB-0Ma"/>
                             <constraint firstItem="p0A-fv-aTn" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="q6h-uq-D2j"/>
+                            <constraint firstItem="LJv-Ss-ecc" firstAttribute="centerX" secondItem="aqO-zQ-epm" secondAttribute="centerX" id="tNz-WB-GYg"/>
+                            <constraint firstItem="7tP-bG-HSN" firstAttribute="height" secondItem="LJv-Ss-ecc" secondAttribute="height" id="vqp-KK-9uw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CategoryLabel" destination="LJv-Ss-ecc" id="7WA-Hu-ITj"/>
+                        <outlet property="birthYearLabel" destination="7tP-bG-HSN" id="GAw-qd-Szc"/>
                         <outlet property="definitionLabel" destination="p0A-fv-aTn" id="Xcn-cn-9At"/>
                         <outlet property="emojiLabel" destination="PWw-Pi-NbB" id="bFJ-Y2-H4q"/>
                     </connections>
